@@ -3,6 +3,7 @@ package core
 import (
 	"fmt"
 	"ginblog/config"
+	"ginblog/global"
 	"io/ioutil"
 	"log"
 
@@ -24,4 +25,5 @@ func Initconfig() {
 	}
 	log.Println("config数据初始化成功")
 	fmt.Println(c)
+	global.Config = c
 }
