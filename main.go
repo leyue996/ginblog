@@ -3,6 +3,7 @@ package main
 import (
 	"ginblog/core"
 	"ginblog/global"
+	"ginblog/routers"
 
 	_ "github.com/sirupsen/logrus"
 )
@@ -16,4 +17,12 @@ func main() {
 	// logrus.Infof("噶")
 
 	global.MysqlDB = core.InitGorm() //连接数据库
+
+	router := routers.InitRouter() //初始化路由
+
+	addr := global.Config.System.Addr() //获取地址端口
+
+	global.Log.Infof("server运行在%s", addr) //打印log
+	router.Run(addr)
+
 }

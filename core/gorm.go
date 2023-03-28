@@ -2,7 +2,6 @@ package core
 
 import (
 	"ginblog/global"
-	"log"
 	"time"
 
 	"gorm.io/driver/mysql"
@@ -13,7 +12,7 @@ import (
 func InitGorm() *gorm.DB {
 
 	if global.Config.Mysql.Host == "" {
-		log.Println("数据库的host为空,连接失败")
+		global.Log.Warnln("数据库的host为空,连接失败")
 		return nil
 	}
 
@@ -26,13 +25,13 @@ func InitGorm() *gorm.DB {
 	} else {
 		mysqlLogger = logger.Default.LogMode(logger.Error) //只打印错误的sql
 	}
-	//global.Log = logger.Default.LogMode(logger.Info)
+	//global.MysqlLog = logger.Default.LogMode(logger.Info)
 
 	db, err := gorm.Open(mysql.Open(dsn), &gorm.Config{
 		Logger: mysqlLogger,
 	})
 	if err != nil {
-		log.Fatalf("[%s]mysql连接失败", dsn)
+		global.Log.Fatalf("[%s]mysql连接失败", dsn)
 	}
 	sqlDB, _ := db.DB()
 	sqlDB.SetMaxIdleConns(10)               //最大空闲连接数
