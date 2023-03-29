@@ -4,10 +4,25 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5111400a-71b3-4dee-a23f-87234731da7b" name="变更" comment="初始化路由,系统信息api">
-      <change afterPath="$PROJECT_DIR$/models/res/err_code.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/res/response.go" afterDir="false" />
+    <list default="true" id="5111400a-71b3-4dee-a23f-87234731da7b" name="变更" comment="/api/settings/响应封装">
+      <change afterPath="$PROJECT_DIR$/models/advert_model.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/article_model.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/auth2_collects.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/banner_model.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/comment_model.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/ctype/role_type.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/ctype/sign_status_type.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/ctype/tags_array.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/enter.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/fade_back_model.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/menu_image_model.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/menu_model.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/message_model.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/tag_model.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/user_model.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/settings_api/settings_api.go" beforeDir="false" afterPath="$PROJECT_DIR$/api/settings_api/settings_info.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/res/response.go" beforeDir="false" afterPath="$PROJECT_DIR$/models/res/response.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -95,7 +110,8 @@
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
     <MESSAGE value="初始化路由,系统信息api" />
-    <option name="LAST_COMMIT_MESSAGE" value="初始化路由,系统信息api" />
+    <MESSAGE value="/api/settings/响应封装" />
+    <option name="LAST_COMMIT_MESSAGE" value="/api/settings/响应封装" />
   </component>
   <component name="VgoProject">
     <settings-migrated>true</settings-migrated>

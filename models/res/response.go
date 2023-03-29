@@ -11,16 +11,16 @@ const (
 )
 
 type Response struct {
-	code int
-	data any
-	msg  string
+	Code int
+	Data any
+	Msg  string
 }
 
 func Result(code int, data any, msg string, ctx *gin.Context) {
 	ctx.JSON(http.StatusOK, Response{
-		code: code,
-		data: data,
-		msg:  msg,
+		Code: code,
+		Data: data,
+		Msg:  msg,
 	})
 }
 
